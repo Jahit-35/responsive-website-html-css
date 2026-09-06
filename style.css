@@ -6,8 +6,14 @@
 body{
     
     font-family: 'Montserrat', sans-serif;   
+
 }
 
+body nav{
+    overflow: hidden;
+    height: 100vh;
+    touch-action: none;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -74,73 +80,8 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    /* max-width: 940px; */
     height: 100vh;
 }
-
-/* here start the first section */
-
-#first-section{
-    background-color: #1c2833;
-}
-
-#service-parent{
-
-    width: 1000px;
-    margin: auto;
-    padding: 100px 0;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 20px;
-}
-
-.single-service{
-
-   background-color: #fff;
-   padding: 40px 10px;
-   box-shadow: 0px 0px 12px 1px #555;
-   cursor: pointer;
-   position: relative;
-   overflow: hidden;
-   backdrop-filter: blur(2px);
-
-}
-
-.single-service::after{
-    content: '';
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(2px);
-    transition: all 0.5s ease;
-    pointer-events: none;
-    opacity: 1;
-
-}
-
-.single-service:hover::after{
-
-    opacity: 0;
-    backdrop-filter: blur(0px);
-}
-.single-service i,p,h2{
-    
-    display: flex;
-    justify-content: center;
-    text-align: center;
-} 
-
-.single-service i{
-    font-size: 32px;
-}
-
-.single-service h2{
-    margin: 10px 0px;
-}
-
 
 /* Responsive work start here */
 
@@ -150,6 +91,7 @@ header{
     .menu-btn{
         display: block;
     }
+    
     nav ul{
         position: fixed;
         top: 65px;
@@ -187,6 +129,115 @@ header{
     }
   
 }
+
+/* here start the first section */
+
+#first-section{
+    background-color: #1c2833;
+    padding: 0 !important; 
+}
+
+.the-title{
+    text-align: center;
+    color: #fff;
+    padding-top: 50px ;
+    padding-bottom: 40px;
+    letter-spacing: 0.2em;
+    font-size: 28px;
+    font-weight: bold;
+}
+#service-parent{
+
+    width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    padding-bottom: 50px;
+}
+
+.single-service{
+
+   background-color: #fff;
+   padding: 40px 10px;
+   box-shadow: 0px 0px 12px 1px #555;
+   cursor: pointer;
+   position: relative;
+   overflow: hidden;
+   backdrop-filter: blur(2px);
+
+}
+
+.single-service::after{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(2px);
+    transition: all 0.5s ease;
+    pointer-events: none;
+    opacity: 1;
+
+}
+
+.single-service:hover::after{
+
+    opacity: 0;
+    backdrop-filter: blur(0px);
+}
+.single-service i,
+.single-service h2,
+.single-service p  {
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #000 !important;
+    position: relative
+    ;
+    z-index: 999;
+} 
+
+.single-service i{
+    font-size: 42px;
+}
+.single-service h2{
+    margin: 10px 0px;
+}
+
+
+/* first sectin media query responsive code start here */
+
+@media only screen and (max-width:688px){
+
+    #service-parent{
+
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+        width: 100%;
+    }
+    .single-service{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width:689px) and (max-width:1099px) {
+
+    #service-parent{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        grid-gap: 20px;
+    }
+    
+}
+
+
 
 
 
