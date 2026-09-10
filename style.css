@@ -315,11 +315,75 @@ header{
     padding: 10px 0 20px 0;
 }
 
+/* Here start the fourth section code(advice section) */
+
+#fourth-section{
+    background-color: #154360;
+    padding-bottom: 1000px;
+}
+
+.advice-parent{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+    gap: 50px;
+
+}
+
+.advice-img-box img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.single-advice p{
+
+    margin: 20px 0;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.single-advice h3{
+    font-size: 45px;
+    border-bottom: 2px solid red;
+    padding-bottom: 20px ;
+}
+
+.single-advice h4{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.single-advice a{
+    text-decoration: none;
+    background-color: #fff;
+    padding: 10px 30px;
+    color: #000;
+    border-radius: 20px;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 20px ;
+    transition: 0.5s;
+}
+
+.advice-section-icon {
+    text-align: center;
+}
+
+.advice-section-icon a {
+
+    margin: 0 5px;
+    border: 1px solid #000;
+    transition: 0.5s;
+}
+
+.single-advice a:hover{
+    background-color: #555;
+}
 
 
 
 
-/* first sectin media query responsive code start here */
+/* media query responsive code start here */
 
 @media only screen and (max-width:688px){
 
@@ -368,7 +432,31 @@ header{
     grid-gap: 15px;
     text-align: center;
     margin-top: 50px;
-}
+    }
+
+    /* Here start the fourth section (about section) code start  */
+
+    .advice-parent{
+
+    display: block;
+    margin: 0 20px;
+
+    }
+
+    .advice-section-icon {
+        text-align: left;
+    }
+
+    .advice-section-icon a{
+        margin: 10px 5px;
+    }
+
+    .single-advice h3{
+        margin-top: 50px;
+    }
+
+    /* x-x-x-x */
+
 
 
 }
@@ -422,6 +510,26 @@ header{
     
     }
 
+    /* Here start the fourth section (about section) code start  */
+
+    .advice-parent{
+
+    display: flex;
+    margin: 0 50px;
+
+    }
+
+    .advice-section-icon {
+        text-align: center;
+    }
+
+    .advice-section-icon a{
+        margin: 10px 5px;
+    }
+
+    
+
+    /* x-x-x-x */
 
 
 
