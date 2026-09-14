@@ -319,7 +319,7 @@ header{
 
 #fourth-section{
     background-color: #154360;
-    padding-bottom: 1000px;
+    padding-bottom: 100px;
 }
 
 .advice-parent{
@@ -380,7 +380,118 @@ header{
     background-color: #555;
 }
 
+/* Fifth section code start here(contact section) */
 
+#fifth-section{
+
+    background-image:   linear-gradient(#3958a25e, #4089c7) , url('Image/contact-page.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+form{
+    background-color: #2E357a;
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px 60px;
+    border: 6px solid #4497d3;
+    border-radius: 10px;
+}
+
+form h2{
+
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+}
+
+
+form p{
+    color: #fff;
+    text-align: center;
+    margin: 30px 0;
+    letter-spacing: 0.1em;
+}
+
+.form-input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 30px 0;
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+    border-bottom: 3px solid #4497d3;
+    font-size: 20px;
+
+}
+
+.form-input::placeholder{
+    color: #4497d3;
+}
+
+.submit-button{
+    display: block;
+    margin: 0 auto;
+    padding: 5px 40px;
+    font-size: 20px;
+    background: none;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    box-shadow: 0 0 12px 3px #555 inset;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.submit-button:hover{
+    background-color: #55555556;
+}
+/* x-x-x--x */
+
+/* 6th section code start here(match) */
+
+#sixth-section{
+    background-color: #07254f;
+    color: #fff;
+    padding: 100px 0;
+}
+
+#match-parent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin:0 150px;
+    grid-gap: 20px;
+}
+
+.single-batch{
+    border: 4px solid #26528f;
+    padding: 20px;
+}
+
+.single-batch i{
+
+    font-size: 35px;
+    padding:0 20px 10px 20px ;
+}
+
+.single-batch h5{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.single-batch p{
+    color: #555;
+}
+
+.single-batch:nth-child(2){
+    border: 4px solid #fff;
+}
 
 
 /* media query responsive code start here */
@@ -457,6 +568,15 @@ header{
 
     /* x-x-x-x */
 
+    /* Here start the contact section (5th) */
+
+    form{
+    background-color: #2E357a;
+    width: 90%;
+    padding: 20px 30px;
+    }
+
+
 
 
 }
@@ -527,12 +647,16 @@ header{
         margin: 10px 5px;
     }
 
-    
-
-    /* x-x-x-x */
+         /* x-x-x-x */
 
 
+    /* Here start the contact section */
 
+    form{
+    background-color: #2E357a;
+    width: 90%;
+    padding: 50px 30px;
+    }   
 
 
 }
