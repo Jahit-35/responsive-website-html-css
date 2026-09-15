@@ -493,6 +493,45 @@ form p{
     border: 4px solid #fff;
 }
 
+.first-single-batch{
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+}
+
+/* Here start the seventh section */
+
+#seventh-section{
+    padding: 100px 00px;
+}
+
+#TakeCare-Parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 200px;
+    gap: 30px;
+}
+
+.Single-takecare h3{
+    font-size: 30px;
+}
+
+.Single-takecare p{
+    margin: 20px 0;
+}
+.Single-takecare ul li{
+    list-style-position: inside;
+    margin: 10px 0;
+}
+
+.singel-takecare-img{
+    width: 100%;
+}
+
+.singel-takecare-img img{
+    width: 100%;
+}
+
 
 /* media query responsive code start here */
 
@@ -575,9 +614,35 @@ form p{
     width: 90%;
     padding: 20px 30px;
     }
+    /* finished form section */
 
+    /* Here start 6th section code */
 
+    #match-parent{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin:0 30px;
+        grid-gap: 5px;
+    }
 
+    .first-single-batch{
+        text-align: center;
+    }
+
+    /* x-x-x-x */
+
+    /* Here start the seventh section */
+
+    #TakeCare-Parent{
+
+        display: block;
+        justify-content: space-between;
+        margin: 0 20px;
+    }
+
+    .Single-takecare{
+        margin-bottom: 70px;
+    }
 
 }
 
@@ -658,5 +723,34 @@ form p{
     padding: 50px 30px;
     }   
 
+    /* finished form section */
+
+    /* Here start 6th section code */
+
+    #match-parent{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin:0 70px;
+        grid-gap: 35px;
+    }
+
+    .first-single-batch{
+        text-align: center;
+    }
+
+    /* x-x-x-x */
+
+    /* Here start the seventh section */
+
+    #TakeCare-Parent{
+
+        display: block;
+        justify-content: space-between;
+        margin: 0 70px;
+    }
+
+    .Single-takecare{
+        margin-bottom: 70px;
+    }
 
 }
