@@ -532,6 +532,64 @@ form p{
     width: 100%;
 }
 
+/* footer part start here */
+
+footer{
+    background-color: #154360;
+    padding: 100px 0 50px 0;
+}
+
+#footer-parent{
+    display: flex;
+    margin: 0 150px;
+    color: #fff;
+    gap: 80px;
+}
+
+.single-footer{
+    width: 100%;
+}
+
+.single-footer h5{
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.single-footer-2 p{
+    margin: 15px;
+
+}
+
+.single-footer-2 a{
+    text-decoration: none;
+    color: #Fff;
+}
+
+.single-footer-3 ul{
+    display: flex;
+}
+
+.single-footer-3 ul li{
+
+    list-style: none;
+}
+
+.single-footer-3 ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 5px;
+    font-size: 20px;
+    background-color: #0a278367;
+    padding: 5px;
+}
+
+.single-footer h5 span{
+    color: yellow;
+}
+
+
 
 /* media query responsive code start here */
 
@@ -644,6 +702,28 @@ form p{
         margin-bottom: 70px;
     }
 
+    /* Here start the footer section code */
+
+    #footer-parent{
+        display: flex;
+        flex-direction: column;  
+        color: #fff;
+        margin: 0 30px;
+        
+    }
+
+    .single-footer{
+        text-align: center;
+    }
+
+    .single-footer-3 ul{
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+
 }
 
 @media only screen and (min-width:689px) and (max-width:1099px) {
@@ -752,5 +832,26 @@ form p{
     .Single-takecare{
         margin-bottom: 70px;
     }
+
+
+    /* Here start the footer section */
+
+     #footer-parent{
+        margin: 0 70px;
+        
+    }
+
+    .single-footer{
+        text-align: center;
+    }
+
+    .single-footer-3 ul{
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+
 
 }
