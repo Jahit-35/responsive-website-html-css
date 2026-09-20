@@ -87,6 +87,11 @@ header{
         display: block;
     }
 
+    nav{
+       
+        padding: 0 clamp(15px ,5vw ,80px);
+    }
+
     nav ul{
         position: fixed;
         top: 65px;
@@ -124,7 +129,10 @@ header{
     header{
         background-position: left center;
         height: 100vh;
+
     }
+
+    
   
 }
 
@@ -282,6 +290,7 @@ header{
 
 .more-about-vanila ul{
     margin: 20px 0;
+    list-style-position: inside;
 }
 
 .more-about-vanila a{
